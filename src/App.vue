@@ -1,26 +1,37 @@
+<!-- App.vue -->
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <TheHeader></TheHeader>
+  <TheCarousel></TheCarousel>
+  <SectionOne></SectionOne>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import TheHeader from './components/TheHeader.vue';
+import TheCarousel from './components/TheCarousel.vue'; 
+import SectionOne  from './components/SectionOne.vue';
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    TheHeader,
+    TheCarousel,
+    SectionOne
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+* {
+  margin: 0;
+  padding: 0;
+  
+  font-family: "Roboto", sans-serif;
+  
+
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
 }
 </style>
