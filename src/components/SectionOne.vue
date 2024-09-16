@@ -1,150 +1,145 @@
-    <template>
-
-        <section class="secaoCards">
-
-            
-    <div class="textosSection"> 
-        <h1 class="titleCard">Related to items you've viewed</h1>
-        <h5 class="viewAll">View All</h5>
-    </div>
-            <div class="cards">
-                <div class="card"><img class="produtos" src="https://droper-media.s3.amazonaws.com/112202118436996.webp" alt="">
-                    <p class="nomeProdutos">Nike - Blazer Mid</p>
-                <div class="alinhamentoAvaliacao">  <img class="estrelasProdutos" src="../assets/avaliacao.png" alt=""> <img class="setaPraBaixo" src="../assets/seta-para-baixo.png" alt=""> <p class="qtdComprada">1,951</p></div>
-
-                <div class="precoProduto">
-                    <img class="cifraoDolar" src="../assets/simbolo-do-dolar.png" alt="">
-                    <div class="prices">
-                    <h4 class="precoPromotion">
-                        60,00
-                    </h4>
-                    <h4 class="promotionPrice">
-                        72,00
-                    </h4>
-                </div></div>
-
-                <div class="deliveryProduct">
-                    <div class="textDelivery">
-                    <p>Delivery </p>
-                    <p class="dayDelivery">Tue, Sep 17</p></div>
-                    
-                    <button class="cartDelivery">Add to cart</button>
-
-
-                </div>
-            </div>
-
-
-
-
-
-
-
-
-
-                <div class="card"><img class="produtos" src="https://garmin.vtexassets.com/arquivos/ids/159175/FR265_azul2.jpg?v=638174511087500000" alt="">
-                <p class="nomeProdutos">Garmin - Relógio </p> 
-                <div class="alinhamentoAvaliacao">  <img class="estrelasProdutos" src="../assets/avaliacao.png" alt=""> <img class="setaPraBaixo" src="../assets/seta-para-baixo.png" alt=""> <p class="qtdComprada">1,951</p>
-                    
+<template>
+    <section class="secaoCards">
+        <div class="textosSection">
+            <h1 class="titleCard">Related to items you've viewed</h1>
+            <h5 class="viewAll">View All</h5>
+        </div>
+        <div class="cards">
+            <div v-for="(product, index) in products" :key="product.id" class="card">
+                <img class="produtos" :src="product.image" alt="">
+                <p class="nomeProdutos">{{ product.name }}</p>
+                <div class="alinhamentoAvaliacao">
+                    <img class="estrelasProdutos" src="../assets/avaliacao.png" alt="">
+                    <img class="setaPraBaixo" src="../assets/seta-para-baixo.png" alt="">
+                    <p class="qtdComprada">{{ product.sold }}</p>
                 </div>
                 <div class="precoProduto">
                     <img class="cifraoDolar" src="../assets/dollar-currency-symbol.png" alt="">
                     <div class="prices">
-                    <h4 class="priceStandard">
-                        220,00
-                    </h4>
-                   
-                </div></div>
-
+                        <h4 class="precoPromotion" v-if="product.discountedPrice">
+                            {{ product.discountedPrice }}
+                        </h4>
+                        <h4 class="promotionPrice" v-if="product.discountedPrice">
+                            {{ product.originalPrice }}
+                        </h4>
+                        <h4 class="priceStandard" v-else>
+                            {{ product.originalPrice }}
+                        </h4>
+                    </div>
+                </div>
                 <div class="deliveryProduct">
                     <div class="textDelivery">
-                    <p>Delivery </p>
-                    <p class="dayDelivery">Fri, Sep 27</p></div>
-                    
-                    <button class="cartDelivery">Add to cart</button>
+                        <p>Delivery</p>
+                        <p class="dayDelivery">{{ product.deliveryDate }}</p>
+                    </div>
+                    <div class="buttonCart">
+                        <button v-if="!product.addedToCart" @click="addProduct(index)" class="cartDelivery">
+                            Add to cart
+                        </button>
 
-
+                        <div class="removerProduct" v-if="product.showTeste">
+                            <p>1 in cart -</p> <p style="color: #007185
+" class="removerCart" @click="removeProduct(index)">Remove</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-                <div class="card"><img class="produtos" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHC40WOOQ81lqf8_3NXoPxiI2450FHTr7neg&s" alt="">
-                    <p class="nomeProdutos">Sony - Câmera </p>
-                
-                    <div class="alinhamentoAvaliacao">  <img class="estrelasProdutos" src="../assets/avaliacao.png" alt=""> <img class="setaPraBaixo" src="../assets/seta-para-baixo.png" alt=""> <p class="qtdComprada">1,951</p></div>
-                    <div class="precoProduto">
-                    <img class="cifraoDolar" src="../assets/dollar-currency-symbol.png" alt="">
-                    <div class="prices">
-                    <h4 class="priceStandard">
-                        250,00
-                    </h4>
-                   
-                </div></div>
-
-                <div class="deliveryProduct">
-                    <div class="textDelivery">
-                    <p>Delivery </p>
-                    <p class="dayDelivery">Mon, Sep 23</p></div>
-            
-                    <button class="cartDelivery">Add to cart</button>
-
-
-                </div></div>
-                <div class="card"><img class="produtos" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-2S3Kl8PBV_DuaNbQcIy-v1Kd7lgR9ZuGiA&s" alt="">
-                    <p class="nomeProdutos">Apple - Magic KeyBoard </p>
-                
-                    <div class="alinhamentoAvaliacao">  <img class="estrelasProdutos" src="../assets/avaliacao.png" alt=""> <img class="setaPraBaixo" src="../assets/seta-para-baixo.png" alt=""> <p class="qtdComprada">1,951</p></div>
-                    <div class="precoProduto">
-                    <img class="cifraoDolar" src="../assets/dollar-currency-symbol.png" alt="">
-                    <div class="prices">
-                    <h4 class="priceStandard">
-                        160,00
-                    </h4>
-                   
-                </div></div>
-
-                <div class="deliveryProduct">
-                    <div class="textDelivery">
-                    <p>Delivery </p>
-                    <p class="dayDelivery">Thu, Sep 26</p></div>
-                    
-                    <button class="cartDelivery">Add to cart</button>
-
-
-                </div>
-                </div>
-                <div class="card"><img class="produtos" src="https://m.media-amazon.com/images/I/51m93rTRMkL.jpg" alt="">
-                    <p class="nomeProdutos">QCY - Fone de ouvido</p>
-                    <div class="alinhamentoAvaliacao">  <img class="estrelasProdutos" src="../assets/avaliacao.png" alt=""> <img class="setaPraBaixo" src="../assets/seta-para-baixo.png" alt=""> <p class="qtdComprada">1,951</p></div>
-                    <div class="precoProduto">
-                    <img class="cifraoDolar" src="../assets/dollar-currency-symbol.png" alt="">
-                    <div class="prices">
-                    <h4 class="priceStandard">
-                        30,00
-                    </h4>
-                   
-                </div></div>
-
-                <div class="deliveryProduct">
-                    <div class="textDelivery">
-                    <p>Delivery </p>
-                    <p class="dayDelivery">Wed, Sep 18</p></div>
-                    
-                    <button class="cartDelivery">Add to cart</button>
-
-
-                </div>
-                </div>
-
-
-
-            </div>
-
-
+        </div>
     </section>
+</template>
 
-    </template>
 
-    <style>
+<script>
 
+
+
+export default {
+    data() {
+        return {
+            teste: false,
+            products: [
+                {
+                    id: 1,
+                    name: 'Nike - Blazer Mid',
+                    image: 'https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcS5NBmFsoE0Q5OtAw4bFSagN3wMRkZNYOa6183HJnbxRF-39G7e4HghcMBzm0mx_XQ1qWRL-wnhxubbnhpah6DZU5zSqna_Y3psdZll60fdCC-MUXeO1FyU&usqp=CAE',
+                    sold: '1,951',
+                    discountedPrice: '60,00',
+                    originalPrice: '72,00',
+                    deliveryDate: 'Tue, Sep 17',
+                    addedToCart: false,
+                    showTeste: false
+
+
+                },
+                {
+                    id: 2,
+                    name: 'Garmin - Relógio',
+                    image: 'https://garmin.vtexassets.com/arquivos/ids/159175/FR265_azul2.jpg?v=638174511087500000',
+                    sold: '350',
+                    originalPrice: '220,00',
+                    deliveryDate: 'Fri, Sep 27',
+                    addedToCart: false,
+                    showTeste: false
+
+                },
+                {
+                    id: 3,
+                    name: 'Sony - Câmera',
+                    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHC40WOOQ81lqf8_3NXoPxiI2450FHTr7neg&s',
+                    sold: '789',
+                    originalPrice: '250,00',
+                    deliveryDate: 'Mon, Sep 23',
+                    addedToCart: false,
+                    showTeste: false
+
+                },
+                {
+                    id: 4,
+                    name: 'Apple - Magic KeyBoard',
+                    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-2S3Kl8PBV_DuaNbQcIy-v1Kd7lgR9ZuGiA&s',
+                    sold: '2,134',
+                    originalPrice: '160,00',
+                    deliveryDate: 'Thu, Sep 26',
+                    addedToCart: false,
+                    showTeste: false
+
+                },
+                {
+                    id: 5,
+                    name: 'QCY - Fone de ouvido',
+                    image: 'https://m.media-amazon.com/images/I/51m93rTRMkL.jpg',
+                    sold: '588',
+                    originalPrice: '30,00',
+                    deliveryDate: 'Wed, Sep 18',
+                    addedToCart: false,
+                    showTeste: false
+
+                }
+            ]
+        }
+    },
+    methods: {
+
+        addProduct(index) {
+            const product = this.products[index];
+            this.$store.commit('addProduct', product);
+            this.products[index].addedToCart = true;
+            this.products[index].showTeste = true;
+        },
+        removeProduct(index) {
+            
+            const product = this.products[index];
+            this.$store.commit('removeProduct', product.id);
+            this.products[index].addedToCart = false;
+            this.products[index].showTeste = false;
+
+        }
+    }
+}
+
+
+</script>
+<style>
 .textosSection {
     display: flex;
     align-items: center;
@@ -157,6 +152,7 @@
     margin-left: auto;
     color: #FF9900;
     margin-right: 10vh;
+    cursor: pointer;
 }
 
 .textosSection h1 {
@@ -181,9 +177,9 @@
 
 .cards {
     display: flex;
-    align-items: flex-start; 
+    align-items: flex-start;
     justify-content: center;
-  
+
     gap: 7vh;
 }
 
@@ -260,12 +256,13 @@
 
 .cartDelivery {
     border-radius: 15px;
-    height: 3vh; 
+    height: 3vh;
     color: black;
     background-color: #ffd814;
     font-weight: bold;
     width: 5.7vw;
-    align-self: stretch; 
+    align-self: stretch;
+    cursor: pointer;
 }
 
 .priceStandard {
@@ -273,4 +270,26 @@
     color: #000000;
 }
 
-    </style>
+.buttonCart {
+    display: flex;
+    align-items: flex-start;
+    height: 7vh;
+    width: 10vw;
+}
+
+.removerProduct{
+    display: flex;
+    align-items: center;
+    gap: 0.7vh;
+}
+
+.removerProduct p {
+    color: #565959;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+
+
+</style>

@@ -5,7 +5,7 @@
             <div class="menuECategoria">
             <img src="../assets/menuHamburguer.png" class="menuHamburguer" alt="menuHamburguer">
             <div class="categoriaHeader">
-            <p class="selectHeader">Select</p> 
+            <p class="selectHeader">Select</p>  
             <div class="alinhamentoSeta">
             <h4 class="categoryHeader">Category  </h4>
             <img src="../assets/down-arrow.png" alt="setaConta" class="setaBaixo"></div>
@@ -27,8 +27,12 @@
         </div>
 
         <div class="carrinhoCompraHeader">
+                <pre>
 
-                <img class="carrinhoCompra" src="../assets/carrinhoCompras.png " alt="carrinhoCompras">
+{{ $store.state.cart.length }}
+<img class="carrinhoCompra" src="../assets/carrinhoCompras.png " alt="carrinhoCompras">
+                </pre>
+                
         </div>
 
             </div>
@@ -86,7 +90,7 @@ header {
 
 .lupaHeader {
         width: 2.8vw;
-    height: 5.6vh;
+    height: 5.79vh;
     background-color: orange;
     border-radius: 1px;
     margin-top: 0.2vh;
@@ -136,6 +140,14 @@ header {
 }
 
 .carrinhoCompraHeader {
-        margin-left: 3vh;
+   margin-left: 3vh;
+   height: 13vh;
+}
+
+.carrinhoCompraHeader pre{
+        color: #FF9900; ;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
 }
 </style>

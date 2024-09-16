@@ -3,18 +3,21 @@
   <TheHeader></TheHeader>
   <TheCarousel></TheCarousel>
   <SectionOne></SectionOne>
+  <SectionWatch></SectionWatch>
 </template>
 
 <script>
 import TheHeader from './components/TheHeader.vue';
 import TheCarousel from './components/TheCarousel.vue'; 
 import SectionOne  from './components/SectionOne.vue';
+import SectionWatch from './components/SectionWatch.vue';
 export default {
   name: 'App',
   components: {
     TheHeader,
     TheCarousel,
-    SectionOne
+    SectionOne,
+    SectionWatch
   }
 }
 </script>

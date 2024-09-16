@@ -6,8 +6,8 @@ import { EffectCoverflow,  Navigation } from 'swiper/modules';
 
 const photos = [
   'https://a.storyblok.com/f/261604/2500x1500/0a7b38db4f/rotondo-vermillon-nonna-feuillage-chiesa-bouclette-creme-carlotta-marta-verre-rose.jpg/m/1940x0/filters:quality(80)',
-  'https://files.oaiusercontent.com/file-nRC2DU3aaFhVcr00qu7ArRZJ?se=2024-09-11T13%3A32%3A23Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D76f3cfe2-984b-485e-915f-4ec0d25bed93.webp&sig=RqzIombch%2BQKQ6aqmkrEzqCKacKmTGhix5pP9AH9jQg%3D',
-  require('@/assets/pikaso_embed.jpeg'),
+  'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/37f44b83381427.60006dd5cd1f4.png',
+ 'https://newcomglobal.com/wp-content/uploads/2021/03/cs2102l0010_009_383979_gl_cs_cm_fy21q4_sm_latitude_family_li_1200x627_1_c.jpg',
   'https://img.freepik.com/fotos-gratis/criancas-nao-binarias-de-vista-superior-brincando-com-um-jogo-colorido_23-2148779611.jpg?t=st=1725627355~exp=1725630955~hmac=b060049d99359c221e3fe431ab0f160a8f4e0c45f9c3ab6b7b0b5e9b269b7221&w=826'
 ];
 </script>
@@ -27,8 +27,8 @@ const photos = [
 
 <style>
 .mySwiper {
-  width: 98.9vw;
-  height: 350px; 
+  width: 98.vw;
+  height: 410px; 
 }
 
 .swiper-slide {
