@@ -1,5 +1,7 @@
 <!-- App.vue -->
 <template>
+
+
   <TheHeader></TheHeader>
   <TheCarousel></TheCarousel>
   <SectionOne></SectionOne>
@@ -9,7 +11,7 @@
 <script>
 import TheHeader from './components/TheHeader.vue';
 import TheCarousel from './components/TheCarousel.vue'; 
-import SectionOne  from './components/SectionOne.vue';
+import SectionOne  from './components/SectionCardsOne.vue';
 import SectionWatch from './components/SectionWatch.vue';
 export default {
   name: 'App',
@@ -37,4 +39,6 @@ export default {
   font-weight: 900;
   font-style: normal;
 }
+
+
 </style>

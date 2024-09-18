@@ -95,7 +95,7 @@ export default {
                 },
                 {
                     id: 4,
-                    name: 'Apple - Magic KeyBoard',
+                    name: 'Apple - Magic',
                     image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-2S3Kl8PBV_DuaNbQcIy-v1Kd7lgR9ZuGiA&s',
                     sold: '2,134',
                     originalPrice: '160,00',
@@ -118,6 +118,7 @@ export default {
             ]
         }
     },
+    
     methods: {
 
         addProduct(index) {
@@ -134,7 +135,8 @@ export default {
             this.products[index].showTeste = false;
 
         }
-    }
+    },
+    
 }
 
 
@@ -262,6 +264,7 @@ export default {
     font-weight: bold;
     width: 5.7vw;
     align-self: stretch;
+    border: none;
     cursor: pointer;
 }
 
@@ -289,7 +292,115 @@ export default {
     font-weight: bold;
 }
 
+@media screen and (max-width: 768px) { 
 
+    .card:nth-child(5) {
+        display: none;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    
+        align-items: start; 
+    }
+
+    .card {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .textosSection h1{
+        margin: 0;
+        font-size: 15px
+    }
+    .textosSection{
+        justify-content: space-evenly
+    }
+    .viewAll {
+        margin: 0
+    }
+
+    .nomeProdutos{
+        font-size: 9px;
+    }
+
+    .qtdComprada{
+        font-size: 13px
+    }
+
+    .priceStandard{
+        font-size: 17px;
+    }
+    .cards{
+        gap: 2vh;
+    }
+
+    .precoPromotion{
+        font-size: 17px;
+    }
+
+    .promotionPrice{
+        font-size: 14px;
+        margin: 0
+    }
+
+    .textDelivery{
+        font-size: 13px
+    }
+    .prices {
+    font-size: 18px;
+    display: flex;
+    align-items: normal;
+
+ 
+    gap: 1vh; }
+
+    .setaPraBaixo {
+    width: 2.9vw;
+}
+    .card{
+        height: 40vh;
+        margin-top: 10vh;
+    }
+
+    .removerProduct p {
+        font-size :13px
+    }
+
+    .cartDelivery{
+        font-size: 9px;
+        height: 4vh;
+        width: 16vw;
+        border: none;
+    }
+
+    .produtos{
+        height: 13vh;
+        width : 27vw;
+        object-fit: cover;
+    }
+
+    .precoProduto {
+        margin: 0;
+        height: 4vh;
+    }
+
+.estrelasProdutos{
+    width: 19vw;
+}
+.buttonCart{
+    width: 16vw;
+   
+}
+
+
+
+.cifraoDolar {
+    width: 3.2vw;
+}
+
+
+}
 
 
 </style>

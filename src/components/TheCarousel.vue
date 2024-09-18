@@ -57,4 +57,18 @@ const photos = [
   font-size: 50px;
 }
 
+@media screen and (max-width: 768px) { 
+
+.mySwiper {
+  height: 318px;
+}
+.swiper-slide img {
+    width: 100%;
+    height: 319px;
+    object-fit: cover;
+
+    
+   
+
+} }
 </style>

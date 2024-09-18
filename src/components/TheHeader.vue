@@ -1,6 +1,8 @@
 <template>
 
         <header>
+
+                <div class="alinhamentoDivLogo">
             <img class="logoAmazon" src="../assets/logoAmazon.png" alt="logoAmazon">
             <div class="menuECategoria">
             <img src="../assets/menuHamburguer.png" class="menuHamburguer" alt="menuHamburguer">
@@ -8,7 +10,7 @@
             <p class="selectHeader">Select</p>  
             <div class="alinhamentoSeta">
             <h4 class="categoryHeader">Category  </h4>
-            <img src="../assets/down-arrow.png" alt="setaConta" class="setaBaixo"></div>
+            <img src="../assets/down-arrow.png" alt="setaConta" class="setaBaixo"></div></div>
         </div></div>
 
             <div class="barraPesquisaHeader">
@@ -77,6 +79,13 @@ header {
 .menuHamburguer {
         width: 2vw;
        
+}
+
+.alinhamentoDivLogo{
+        display: flex;
+        flex-direction: row;
+        gap: 5vh;
+        align-items: center;
 }
 
 .selectHeader{
@@ -150,4 +159,87 @@ header {
         align-items: center;
         flex-direction: column;
 }
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  header {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+
+   justify-content: center;
+  }
+
+  .logoAmazon {
+   width: 26vw;
+   height: 11vh;
+  }
+
+  .alinhamentoDivLogo{
+        display: flex;
+        flex-direction: row;
+        gap: 5vh;
+        align-items: center;
+}
+.barraPesquisaHeader{
+        margin-bottom: 1vh;
+}
+
+  .menuECategoria {
+        margin-top: 1vh;
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    gap: 1vw;
+  }
+
+  .menuHamburguer {
+    width: 5vw;
+  }
+
+  .barraPesquisa {
+    width: 70vw; 
+    height: 5vh;
+        
+  }
+  
+  .lupaHeader {
+        width: 7.5vw;
+        height: 5.1vh;
+        
+  }
+  .userHeader {
+    height: 8vh;
+    gap: 5vh;
+  
+  }
+
+  .carrinhoCompraHeader pre {
+        margin-top: 1vh;
+  }
+
+  .carrinhoCompra {
+    width: 5vw;
+  }
+
+  .carrinhoCompraHeader {
+    margin-left: 0;
+  }
+
+  .iconUser{
+        height: 5vh;
+        width: 10vw;
+  }
+
+  
+
+  .categoriaHeader,
+  .selectHeader {
+    font-size:12px; 
+  } }
+
+
 </style>

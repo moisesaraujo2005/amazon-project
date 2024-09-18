@@ -159,5 +159,73 @@
   cursor: pointer;
   font-size: 1.2rem;
 }
+
+@media screen and (max-width: 768px) { 
+
+
+  .watchSection{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  height: 150vh;
+    gap: 5vh;
+  }
+
+  .appleWatchs{
+    width: 90vw;
+    height: 60vh;
+  }
+
+  .relogiosWatch{
+    width: 43vw;
+    margin-left: 13vh;
+    height: 37vh;
+  }
+
+  .watchInfo h1 {
+    font-size: 1.4rem;
+}
+
+
+.watchInfo h3 {
+    font-size: 1rem;
+}
+
+.watchInfo{
+  justify-content: center;
+}
+
+.logoApple{
+  width: 30vw;
+}
+
+.buttonLearn p  {
+  font-size: 0.9rem;
+}
+
+.buttonBuy {
+  font-size: 0.9rem;
+  width: 24vw;
+}
+
+.imagensDiscover img{
+  width: 44vw;
+  height: 18vh;
+}
+
+.textAcessories h1 {
+  font-size: 1.4rem
+}
+
+.textAcessories p {
+  font-size: 1rem;
+}
+
+.acessoriesSession{
+  width:90vw;
+  gap: 8vh;
+}
+}
   </style>
   
