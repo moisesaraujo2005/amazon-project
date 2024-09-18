@@ -6,6 +6,10 @@
   <TheCarousel></TheCarousel>
   <SectionOne></SectionOne>
   <SectionWatch></SectionWatch>
+  <SectionCardsTwo></SectionCardsTwo>
+  <SectionGiftCard></SectionGiftCard>
+  <SectionsCardsThree></SectionsCardsThree>
+
 </template>
 
 <script>
@@ -13,13 +17,19 @@ import TheHeader from './components/TheHeader.vue';
 import TheCarousel from './components/TheCarousel.vue'; 
 import SectionOne  from './components/SectionCardsOne.vue';
 import SectionWatch from './components/SectionWatch.vue';
+import SectionCardsTwo from './components/SectionCardsTwo.vue';
+import SectionGiftCard from './components/SectionGiftCard.vue';
+import SectionsCardsThree from './components/SectionsCardsThree.vue';
 export default {
   name: 'App',
   components: {
     TheHeader,
     TheCarousel,
     SectionOne,
-    SectionWatch
+    SectionWatch,
+    SectionCardsTwo,
+    SectionGiftCard,
+    SectionsCardsThree
   }
 }
 </script>

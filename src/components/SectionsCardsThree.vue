@@ -1,7 +1,7 @@
 <template>
     <section class="secaoCards">
         <div class="textosSection">
-            <h1 class="titleCard">Related to items you've viewed</h1>
+            <h1 class="titleCard">Amazon Devices</h1>
             <h5 class="viewAll">View All</h5>
         </div>
         <div class="cards">
@@ -60,12 +60,12 @@ export default {
             products: [
                 {
                     id: 1,
-                    name: 'Nike - Blazer Mid',
-                    image: 'https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcS5NBmFsoE0Q5OtAw4bFSagN3wMRkZNYOa6183HJnbxRF-39G7e4HghcMBzm0mx_XQ1qWRL-wnhxubbnhpah6DZU5zSqna_Y3psdZll60fdCC-MUXeO1FyU&usqp=CAE',
-                    sold: '1,951',
-                    discountedPrice: '60,00',
-                    originalPrice: '72,00',
-                    deliveryDate: 'Tue, Sep 17',
+                    name: 'Amazon - Echo Dot ',
+                    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStHYoQZSaugT2Dv3H4IuZL9URQG17g7fUttw&s',
+                    sold: '38.345',
+                  
+                    originalPrice: '70,30',
+                    deliveryDate: 'Friday, Jan 20',
                     addedToCart: false,
                     showTeste: false
 
@@ -73,44 +73,44 @@ export default {
                 },
                 {
                     id: 2,
-                    name: 'Garmin - Relógio',
-                    image: 'https://garmin.vtexassets.com/arquivos/ids/159175/FR265_azul2.jpg?v=638174511087500000',
-                    sold: '350',
-                    originalPrice: '220,00',
-                    deliveryDate: 'Fri, Sep 27',
+                    name: 'Amazon - Fire TV Stick',
+                    image: 'https://m.media-amazon.com/images/I/41IVtjpgH7L._AC_UF1000,1000_QL80_.jpg',
+                    sold: '20,422',
+                    originalPrice: '52,72',
+                    deliveryDate: 'Fri, Sep 17',
                     addedToCart: false,
                     showTeste: false
 
                 },
                 {
                     id: 3,
-                    name: 'Sony - Câmera',
-                    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHC40WOOQ81lqf8_3NXoPxiI2450FHTr7neg&s',
-                    sold: '789',
-                    originalPrice: '250,00',
-                    deliveryDate: 'Mon, Sep 23',
+                    name: 'Amazon - Echo Show 8',
+                    image: 'https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR6NQEoYC9tWQiWzWUS906217rFjengHcyVGKlmYM7U28qKcgbAQcIJ6uD1bHuJO1IMzJWXPJMF1wzDPC_cGsHUwF4UIWRXtT-_eJNL6i_fZA4aNgLtPZqSPA&usqp=CAE',
+                    sold: '75,993',
+                    originalPrice: '117,17',
+                    deliveryDate: 'Mon, Sep 15',
                     addedToCart: false,
                     showTeste: false
 
                 },
                 {
                     id: 4,
-                    name: 'Apple - Magic',
-                    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-2S3Kl8PBV_DuaNbQcIy-v1Kd7lgR9ZuGiA&s',
-                    sold: '2,134',
-                    originalPrice: '160,00',
-                    deliveryDate: 'Thu, Sep 26',
+                    name: 'Amazon - Echo Flex ',
+                    image: 'https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSVsaFxpKoyrRsMi_q0cO9W4Rig9n6N0-6DagZyRAAUarq-U7dYscNDed-oiiQIaBOk3BLbLqbkmC3UrMkMyABCsDK7Azzp55M85H4EdXls8IfPrcUcBFOv3_K5&usqp=CAE',
+                    sold: '245',
+                    originalPrice: '39,88',
+                    deliveryDate: 'Thu, Oct 21',
                     addedToCart: false,
                     showTeste: false
 
                 },
                 {
                     id: 5,
-                    name: 'QCY - Fone de ouvido',
-                    image: 'https://m.media-amazon.com/images/I/51m93rTRMkL.jpg',
-                    sold: '588',
-                    originalPrice: '30,00',
-                    deliveryDate: 'Wed, Sep 18',
+                    name: 'Amazon - Kindle Unlimited',
+                    image: 'https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQD1wctawdscCB5Zg-LlKAD_vHOcpYzY51BaMKAzTwCdV65WzWSHzAr21e8_-l36vTYJAxs7hB2mm-mFcQilymUC0z8wvkeM0Gdo302Gpx7o0SnqXZwJxUf&usqp=CAE',
+                    sold: '10,312',
+                    originalPrice: '120,00',
+                    deliveryDate: 'Wed, Sep 29',
                     addedToCart: false,
                     showTeste: false
 
@@ -293,9 +293,7 @@ export default {
 }
 
 @media screen and (max-width: 768px) { 
-    .secaoCards{
-        height: 110vh;
-    }
+
     .card:nth-child(5) {
         display: none;
     }

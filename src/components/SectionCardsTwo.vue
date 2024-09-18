@@ -1,7 +1,7 @@
 <template>
     <section class="secaoCards">
         <div class="textosSection">
-            <h1 class="titleCard">Related to items you've viewed</h1>
+            <h1 class="titleCard">Inspired by your shopping trends</h1>
             <h5 class="viewAll">View All</h5>
         </div>
         <div class="cards">
@@ -60,12 +60,12 @@ export default {
             products: [
                 {
                     id: 1,
-                    name: 'Nike - Blazer Mid',
-                    image: 'https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcS5NBmFsoE0Q5OtAw4bFSagN3wMRkZNYOa6183HJnbxRF-39G7e4HghcMBzm0mx_XQ1qWRL-wnhxubbnhpah6DZU5zSqna_Y3psdZll60fdCC-MUXeO1FyU&usqp=CAE',
-                    sold: '1,951',
-                    discountedPrice: '60,00',
-                    originalPrice: '72,00',
-                    deliveryDate: 'Tue, Sep 17',
+                    name: 'Vans - Bag Realm',
+                    image: 'https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQPOcKBv4ma65hvXZiuzUG6MbZQzt9YgNZqI3iRXODEhUi6e1zMgn9VE9JhjyV-Tk4ZZyIUE-q5vTyRTtyBUg4yj2pz_0Es_qWoYX2FtTuT_rKC6JJuSkTtWw&usqp=CAE',
+                    sold: '245',
+                  
+                    originalPrice: '38,00',
+                    deliveryDate: 'Friday, Jan 17',
                     addedToCart: false,
                     showTeste: false
 
@@ -73,44 +73,44 @@ export default {
                 },
                 {
                     id: 2,
-                    name: 'Garmin - Relógio',
-                    image: 'https://garmin.vtexassets.com/arquivos/ids/159175/FR265_azul2.jpg?v=638174511087500000',
-                    sold: '350',
-                    originalPrice: '220,00',
-                    deliveryDate: 'Fri, Sep 27',
+                    name: 'Vitra - Eames Elephant',
+                    image: 'https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQjZz4d6HWJFTEVl-uXCCm0Hkri4XF3M4AWGDZm5sgXvrmzx7-oTn-yDtK-tD-9QmHkCl_wYztangJtXV5r0v4p87Z6gMJEKPBK32dvDbk1hlyoS2eIu4A2&usqp=CAE',
+                    sold: '56',
+                    originalPrice: '229,00',
+                    deliveryDate: 'Fri, Sep 13',
                     addedToCart: false,
                     showTeste: false
 
                 },
                 {
                     id: 3,
-                    name: 'Sony - Câmera',
-                    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHC40WOOQ81lqf8_3NXoPxiI2450FHTr7neg&s',
-                    sold: '789',
-                    originalPrice: '250,00',
-                    deliveryDate: 'Mon, Sep 23',
+                    name: 'Mi - Mi Ultra 15 | 5G',
+                    image: 'https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQfSsQRllgRASXv3L7KvGsTFvAYO5hccQpjQxNOBUoqGhKbzsazaA1z0OGoNUzS8Tfd-chPh4UOlB-eotI-vISxexE_6GK_dg9k-mlp-fqRyW2m1ojK5XVM&usqp=CAE',
+                    sold: '1934',
+                    originalPrice: '1,150',
+                    deliveryDate: 'Mon, Sep 13',
                     addedToCart: false,
                     showTeste: false
 
                 },
                 {
                     id: 4,
-                    name: 'Apple - Magic',
-                    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-2S3Kl8PBV_DuaNbQcIy-v1Kd7lgR9ZuGiA&s',
-                    sold: '2,134',
-                    originalPrice: '160,00',
-                    deliveryDate: 'Thu, Sep 26',
+                    name: 'Vans - Anaheim Factory ',
+                    image: 'https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR6N4mRFQ4-sRtDgXFTaERBbL8g9jN-03lg4rnVpkCn87kH7-k-PEsgFyREUf5k4-INGk27w4FmHtvf75HaSyvAEO_Ipd9gGPNgpKyzsmqEtm4pvWCBrJd5WQ&usqp=CAE',
+                    sold: '245',
+                    originalPrice: '105,00',
+                    deliveryDate: 'Thu, Oct 26',
                     addedToCart: false,
                     showTeste: false
 
                 },
                 {
                     id: 5,
-                    name: 'QCY - Fone de ouvido',
-                    image: 'https://m.media-amazon.com/images/I/51m93rTRMkL.jpg',
-                    sold: '588',
-                    originalPrice: '30,00',
-                    deliveryDate: 'Wed, Sep 18',
+                    name: 'Vans - Trippy Floral',
+                    image: 'https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSR5r6DTAOMdFuc-lviOpiqsyA-KwPc0Pp9r9rAhHO79UOc8Mt9xxwyfpyFvfTvlMbX-x60MISovpGmErukg1ZPGOIKQRIQOtVmPCNaoccAQLt9Loz3gOcl76s&usqp=CAE',
+                    sold: '649',
+                    originalPrice: '90,00',
+                    deliveryDate: 'Wed, Sep 29',
                     addedToCart: false,
                     showTeste: false
 
@@ -293,9 +293,7 @@ export default {
 }
 
 @media screen and (max-width: 768px) { 
-    .secaoCards{
-        height: 110vh;
-    }
+
     .card:nth-child(5) {
         display: none;
     }

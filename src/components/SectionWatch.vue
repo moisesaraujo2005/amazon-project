@@ -168,13 +168,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  height: 150vh;
+  height: 120vh;
     gap: 5vh;
+    
   }
 
   .appleWatchs{
     width: 90vw;
     height: 60vh;
+
   }
 
   .relogiosWatch{
