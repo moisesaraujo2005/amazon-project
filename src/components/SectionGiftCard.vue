@@ -18,7 +18,7 @@
   
   <style>
   .sectionGift {
-    height: 45vh;
+    height: 35vh;
   }
   
   .bannerOrange {

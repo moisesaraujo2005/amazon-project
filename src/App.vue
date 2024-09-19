@@ -9,6 +9,10 @@
   <SectionCardsTwo></SectionCardsTwo>
   <SectionGiftCard></SectionGiftCard>
   <SectionsCardsThree></SectionsCardsThree>
+  <SectionBanner></SectionBanner>
+  <SectionPromotionCards></SectionPromotionCards>
+  <SectionCardsFour></SectionCardsFour>
+  <SectionFooter></SectionFooter>
 
 </template>
 
@@ -20,6 +24,10 @@ import SectionWatch from './components/SectionWatch.vue';
 import SectionCardsTwo from './components/SectionCardsTwo.vue';
 import SectionGiftCard from './components/SectionGiftCard.vue';
 import SectionsCardsThree from './components/SectionsCardsThree.vue';
+import SectionBanner from './components/SectionBanner.vue';
+import SectionPromotionCards from './components/SectionPromotionCards.vue';
+import SectionCardsFour from './components/SectionCardsFour.vue';
+import SectionFooter from './components/SectionFooter.vue';
 export default {
   name: 'App',
   components: {
@@ -29,7 +37,11 @@ export default {
     SectionWatch,
     SectionCardsTwo,
     SectionGiftCard,
-    SectionsCardsThree
+    SectionsCardsThree,
+    SectionBanner,
+    SectionPromotionCards,
+    SectionCardsFour,
+    SectionFooter
   }
 }
 </script>
