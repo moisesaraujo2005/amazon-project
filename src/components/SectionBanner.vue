@@ -33,4 +33,15 @@ section{
     
 }
 
+@media screen and (max-width: 768px) {
+
+section {
+    height: 30vh;
+}
+.banner img{
+    height: 30vh ;
+    width: 90vw;
+}
+}
+
 </style>

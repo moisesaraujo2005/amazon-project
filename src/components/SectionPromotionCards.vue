@@ -90,4 +90,36 @@
     font-weight: 100
  
 }
+
+@media screen and (max-width: 768px) {
+  .cards {
+    display: flex;
+ 
+    gap: 1vh; 
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .card {
+    width: 65vw; 
+    height: auto;
+  }
+
+  .card h3 {
+    font-size: 1.3rem;
+  }
+
+  .card h5 {
+    font-size: 0.8rem;
+  }
+
+  .card img {
+    width: 30vw;
+  }
+
+  .cardsPromotion{
+    height: 135vh;
+  }
+}
+
 </style>

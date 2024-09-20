@@ -89,7 +89,7 @@
 
 footer{
     background-color:#141B24 ;
-    height: 45vh;
+    height: 55vh;
 }
 
 .box-special{
@@ -112,7 +112,7 @@ footer{
 .LogoAmazon{
 
     position: relative;
-    left: 15vh;
+    left: 9vh;
     bottom: 7vh;
 }
 
@@ -176,5 +176,63 @@ footer{
         flex-direction: row;
         margin-right: 10vh;
         gap: 1.5vh;
+    }
+
+
+    @media screen and (max-width: 768px) { 
+        footer{
+            height: 45vh;
+        }
+        .box {
+            font-size: 0.4rem;
+            text-align: center
+        }
+
+        .box-special{
+            font-size: 0.4rem;
+            text-align: center;
+        }
+
+        .LogoAmazon img{
+            width: 10vw;
+        }
+
+        .LogoAmazon{
+            left: 8vh;
+            bottom:11vh;
+        }
+
+
+        .box-footer{
+            margin: 0;
+        }
+
+        .text{
+            font-size:0.7rem
+        }
+
+        .boxTextFooter p{
+            font-size:0.5rem;
+        
+        }
+
+        .boxTextFooter {
+            margin-left: 4vh;
+        }
+        .box-footer{
+            justify-content: space-evenly;
+            margin-right: 4vh;
+            gap:0.5vh;
+            
+        }
+
+        .text h4{
+            font-size:0.4rem;
+        }
+
+        .languageCountry {
+            margin-right: 4vh
+        }
+
     }
 </style>

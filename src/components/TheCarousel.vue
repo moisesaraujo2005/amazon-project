@@ -27,7 +27,7 @@ const photos = [
 
 <style>
 .mySwiper {
-  width: 98.vw;
+  width: 99vw;
   height: 410px; 
 }
 
