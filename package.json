@@ -11,6 +11,7 @@
     "@syncfusion/ej2-vue-navigations": "^26.2.12",
     "@syncfusion/ej2-vue-notifications": "^26.2.10",
     "core-js": "^3.8.3",
+    "express": "^4.21.0",
     "swiper": "^11.1.12",
     "vue": "^3.2.13",
     "vue-carousel": "^0.18.0",
